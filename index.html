@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Página principal -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
           <img src="/Imagenes/logo-bookmark.svg" class="d-inline-block align-text-top"></a>
           <div class="collapse navbar-collapse d-grid" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <button class="btn btn-light" type="button">FEATURES</button>
+                <button class="btn btn-light" type="button" id="featuresButton" onclick="scrollToSection('features')">FEATURES</button>
               </li>
               <li class="nav-item">
                 <button class="btn btn-light" type="button">PRICING</button>
@@ -48,7 +50,42 @@
           </div>
         </div>
 
-      <script src="./js/bootstrap.bundle.min.js"></script>
+<!-- Features -->
+
+    <div class="container" id="features">
+      <div class="row text-center">
+        <h2>Features</h2>
+          <p class="featuresAlign">Our aim is to make it quick and easy for you to access your favourite websites. 
+            Your bookmarks sync between your devices so you can access them on the go.</p>
+            <div class="nav-underline nav justify-content-center custom-tabs">
+              <a class="nav-link" href="#">Simple Bookmarking</a>
+              <a class="nav-link" href="#">Speedy Searching</a>
+              <a class="nav-link" href="#">Easy Sharing</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 img-container">
+              <div class="bg-figure figureFeatures"></div>
+              <img src="/Imagenes/illustration-features-tab-1.svg" class="img-fluid2">
+            </div>
+            <div class="col-sm-4 align-self-center featuresAlign2">
+              <h3>Bookmark in one click</h3>
+              <p>Organize your bookmarks however you like you like. Our simple drag-and-drop
+                 interface gives you complete control over how manage your favorites sites.</p>
+              <button class="btn btn-outline-light  moreInfo" type="button">More Info</button>
+            </div>
+          </div>
+        </div>
+
+<!-- lógica JS -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+      }
+    </script>
 </body>
 
 </html>

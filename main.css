@@ -11856,9 +11856,18 @@ textarea.form-control-lg {
   background-color: #5265E1;
 }
 
+.moreInfo {
+  background-color: #5265E1;
+}
+
 .Firefox {
   color: black;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.Firefox:hover {
+  color: white;
+  background-color: #5265E1;
 }
 
 .text {
@@ -11890,6 +11899,46 @@ textarea.form-control-lg {
   background-color: #5265E1;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
+  z-index: -1;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.featuresAlign {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.custom-tabs .nav-link {
+  color: black;
+  padding-inline: 55px;
+  font-size: 1.1em;
+  margin-bottom: 4%;
+}
+
+.custom-tabs .nav-link:hover {
+  border-bottom: 3px solid #FA5959;
+  font-weight: bold;
+  width: 23%;
+}
+
+.featuresAlign2 {
+  margin-left: 60px;
+}
+
+.figureFeatures {
+  position: -ms-page;
+  top: 1040px;
+  left: -20%;
+  width: 870px;
+  height: 350px;
+  background-color: #5265E1;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
   z-index: -1;
 }
 
