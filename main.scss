@@ -1,0 +1,62 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+.nav-item {
+  margin-right: 20px;
+}
+
+$color-principal: #5265E1;
+$color-secunario: #FA5959;
+$box-shadow-lg: 0 1rem 3rem rgba($black, .175);
+
+.loginButton{
+  background-color: $color-secunario;
+}
+
+.Chrome{
+  background-color: $color-principal;
+}
+
+.Firefox{
+  color: black;
+  box-shadow: $box-shadow-lg;
+}
+
+.text{
+  color: rgb(142, 142, 142);
+}
+
+.container-fluid{
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 14%;
+}
+
+.container{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bg-figure {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  width: 510px;
+  height: 300px;
+  background-color: $color-principal;
+  border-top-left-radius: 100px; 
+  border-bottom-left-radius: 100px;
+  z-index: -1;
+}
