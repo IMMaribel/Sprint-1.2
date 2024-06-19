@@ -17,13 +17,13 @@
           <div class="collapse navbar-collapse d-grid" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <button class="btn btn-light" type="button" id="featuresButton" onclick="scrollToSection('features')">FEATURES</button>
+                <button class="btn buttonGroup" type="button" id="featuresButton" onclick="scrollToSection('features')">FEATURES</button>
               </li>
               <li class="nav-item">
-                <button class="btn btn-light" type="button">PRICING</button>
+                <button class="btn buttonGroup" type="button">PRICING</button>
               </li>
               <li class="nav-item">
-                <button class="btn btn-light" type="button">CONTACT</button>
+                <button class="btn buttonGroup" type="button">CONTACT</button>
               </li>
               <li class="nav-item">
                 <button class="btn btn-outline-light loginButton" type="button">LOGIN</button>
@@ -41,7 +41,7 @@
                 Open a new browser tab an see your sites load instantly. 
                 Try it for free.</p>
             
-            <button class="btn btn-outline-light me-2 Chrome" type="button">Get it on Chrome</button>
+            <button class="btn btn-outline-light me-3 Chrome" type="button">Get it on Chrome</button>
             <button class="btn Firefox" type="button">Get it on Firefox</button>
           </div>
           <div class="col-md-8 img-container">
@@ -70,12 +70,61 @@
             </div>
             <div class="col-sm-4 align-self-center featuresAlign2">
               <h3>Bookmark in one click</h3>
-              <p>Organize your bookmarks however you like you like. Our simple drag-and-drop
+              <p class="featuresAlign">Organize your bookmarks however you like you like. Our simple drag-and-drop
                  interface gives you complete control over how manage your favorites sites.</p>
               <button class="btn btn-outline-light  moreInfo" type="button">More Info</button>
             </div>
           </div>
         </div>
+<br>
+<br>
+<!-- Área de descargas -->
+
+<div class="container" id="downloads">
+  <div class="row text-center">
+    <h3>Download the extension</h3>
+    <p class="featuresAlign">We've got more browsers in the pipeline. Please do let us know if 
+      you've got a favoutite you'd like us to prioritize.
+    </p>
+  </div>
+</div>  
+<div class="containerCards text-center">
+  <div class="row">
+    <div class="col" id="card1">
+      <div class="card h-100">
+        <img src="./Imagenes/logo-chrome.svg" class="chromeImage">
+        <div class="card-body">
+          <h5 class="card-title">Add to Chrome</h5>
+          <p class="text">Minimum version 62</p>
+          <img src="./Imagenes/bg-dots.svg" class="dots">
+          <a href="#" class="btn btn-outline-light  ChromeButton" type="button">Add & Install Extension</a>
+        </div>
+      </div>
+    </div>
+    <div class="col" id="card2">
+      <div class="card h-100" >
+        <img src="./Imagenes/logo-firefox.svg" class="firefoxImage">
+        <div class="card-body">
+          <h5 class="card-title">Add to Firefox</h5>
+          <p class="text">Minimum version 55</p>
+          <img src="./Imagenes/bg-dots.svg" class="dots">
+          <a href="#" class="btn btn-outline-light  FirefoxButton" type="button">Add & Install Extension</a>
+        </div>
+      </div>
+    </div>
+    <div class="col" id="card3">
+      <div class="card h-100">
+        <img src="./Imagenes/logo-opera.svg" class="operaImage">
+        <div class="card-body">
+          <h5 class="card-title">Add to Opera</h5>
+          <p class="text">Minimum version 46</p>
+          <img src="./Imagenes/bg-dots.svg" class="dots">
+          <a href="#" class="btn btn-outline-light  OperaButton" type="button">Add & Install Extension</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- lógica JS -->
 

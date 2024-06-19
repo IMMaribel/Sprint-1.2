@@ -11846,18 +11846,37 @@ textarea.form-control-lg {
 }
 .nav-item {
   margin-right: 20px;
+  width: 100px;
 }
 
 .loginButton {
   background-color: #FA5959;
+  width: 100px;
 }
 
-.Chrome {
-  background-color: #5265E1;
+.loginButton:hover {
+  background-color: none;
+  color: #FA5959;
+  outline-color: #FA5959;
+  outline-style: solid;
 }
 
-.moreInfo {
+.buttonGroup:hover {
+  color: #FA5959;
+  background-color: none;
+  outline: none;
+}
+
+.Chrome, .moreInfo, .ChromeButton, .FirefoxButton, .OperaButton {
   background-color: #5265E1;
+  outline-color: #5265E1;
+}
+
+.ChromeButton:hover, .FirefoxButton:hover, .OperaButton:hover, .moreInfo:hover, .Chrome:hover {
+  background-color: white;
+  color: #5265E1;
+  outline-color: #5265E1;
+  outline-style: solid;
 }
 
 .Firefox {
@@ -11866,8 +11885,9 @@ textarea.form-control-lg {
 }
 
 .Firefox:hover {
-  color: white;
-  background-color: #5265E1;
+  color: black;
+  outline-style: solid;
+  outline-color: black;
 }
 
 .text {
@@ -11911,6 +11931,7 @@ textarea.form-control-lg {
   margin: auto;
   margin-top: 2%;
   margin-bottom: 2%;
+  color: rgb(142, 142, 142);
 }
 
 .custom-tabs .nav-link {
@@ -11940,6 +11961,54 @@ textarea.form-control-lg {
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   z-index: -1;
+}
+
+.containerCards {
+  margin-top: -5%;
+  margin-left: 120px;
+}
+
+.card {
+  width: 250px;
+  border: none;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+#card1 {
+  margin-bottom: 25%;
+}
+
+#card2 {
+  margin-top: 5%;
+  margin-bottom: 20%;
+}
+
+#card3 {
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
+.chromeImage {
+  width: 185px;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.firefoxImage {
+  width: 190px;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.operaImage {
+  width: 175px;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.dots {
+  margin-top: -20px;
+  width: 220px;
 }
 
 /*# sourceMappingURL=main.css.map */
