@@ -11,44 +11,49 @@
   <!-- Página principal -->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-          <img src="/Imagenes/logo-bookmark.svg" class="d-inline-block align-text-top"></a>
-          <div class="collapse navbar-collapse d-grid" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <button class="btn buttonGroup" type="button" id="featuresButton" onclick="scrollToSection('features')">FEATURES</button>
-              </li>
-              <li class="nav-item">
-                <button class="btn buttonGroup" type="button">PRICING</button>
-              </li>
-              <li class="nav-item">
-                <button class="btn buttonGroup" type="button">CONTACT</button>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-outline-light loginButton" type="button">LOGIN</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/Imagenes/logo-bookmark.svg" class="d-inline-block align-text-top"></a>
+      </a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="./Imagenes/icon-hamburger.svg" aria-hidden="true">
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <button class="btn buttonGroup" type="button" id="featuresButton" onclick="scrollToSection('features')">FEATURES</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn buttonGroup" type="button">PRICING</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn buttonGroup" type="button">CONTACT</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-light loginButton" type="button">LOGIN</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 align-self-center">
-            <h1>A Simple Bookmark Manager</h1>
-            <p class="text">A clean and simple interface to organize your favorite websites. 
-                Open a new browser tab an see your sites load instantly. 
-                Try it for free.</p>
-            
-            <button class="btn btn-outline-light me-3 Chrome" type="button">Get it on Chrome</button>
-            <button class="btn Firefox" type="button">Get it on Firefox</button>
-          </div>
-          <div class="col-md-8 img-container">
-            <div class="bg-figure"></div>
-            <img src="/Imagenes/illustration-hero.svg"  class="img-fluid">
-          </div>
-        </div>
+<div class="container">
+  <div class="row">
+    <div class="col colPrincipalPage">
+      <h1>A Simple Bookmark Manager</h1>
+      <p class="text">A clean and simple interface to organize your favorite websites. 
+        Open a new browser tab an see your sites load instantly. 
+        Try it for free.</p>
+      <button class="btn btn-outline-light me-2 Chrome" type="button">Get it on Chrome</button>
+      <button class="btn Firefox" type="button">Get it on Firefox</button>
+    </div>
+    <div class="col img-container1">
+      <div class="bg-figure1"></div>
+      <img src="/Imagenes/illustration-hero.svg" class="img-fluid1">
+    </div>
+  </div>
+</div>
 
 <!-- Features -->
 
@@ -64,15 +69,15 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 img-container">
-              <div class="bg-figure figureFeatures"></div>
+            <div class="col img-container2">
+              <div class="bg-figure2 figureFeatures"></div>
               <img src="/Imagenes/illustration-features-tab-1.svg" class="img-fluid2">
             </div>
-            <div class="col-sm-4 align-self-center featuresAlign2">
+            <div class="col  featuresAlign2">
               <h3>Bookmark in one click</h3>
               <p class="featuresAlign">Organize your bookmarks however you like you like. Our simple drag-and-drop
                  interface gives you complete control over how manage your favorites sites.</p>
-              <button class="btn btn-outline-light  moreInfo" type="button">More Info</button>
+              <a href="#" class="btn btn-outline-light  moreInfo" type="button">More Info</a>
             </div>
           </div>
         </div>
@@ -124,6 +129,74 @@
       </div>
     </div>
   </div>
+</div>
+
+<!-- FAQ's -->
+
+<div class="containerFaqs">
+  <div class="row text-center">
+    <h3>Frequently Asked Questions</h3>
+    <p class="featuresAlign">Here are some of our FAQs. If you have any other
+      questions you'd like answered please feel free to email us.
+    </p>
+  </div>
+</div>  
+<div class="accordion accordion-flush" id="accordionFaqs">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        What is Bookmark?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+         Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. 
+         Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent 
+         taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        How can I request a new browser?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+        Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. 
+        Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent 
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Is there a mobile app?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+        Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. 
+        Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent 
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        What about other Chromium browsers?
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+        Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. 
+        Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent 
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+    </div>
+  </div>
+</div>
+<div class="button-container">
+  <a href="#" class="btn btn-outline-light  infoButton" type="button">More Info</a></div>
 </div>
 
 <!-- lógica JS -->
