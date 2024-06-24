@@ -75,7 +75,8 @@ margin-left: 35%;
 .OperaButton:hover, 
 .moreInfo:hover, 
 .Chrome:hover, 
-.infoButton:hover{
+.infoButton:hover,
+.moreInfo:hover{
   background-color: white;
   color:$color-principal;
   outline-color: $color-principal;
@@ -271,6 +272,10 @@ margin-left: 35%;
   background-image: url(./Imagenes/icon-arrow.svg);
 }
 
+.accordion-button:hover{
+  color: $color-secunario;
+}
+
 .button-container {
   text-align: center;
   margin: 20px;
@@ -456,7 +461,6 @@ margin-left: 35%;
 
   .btn-danger {
     background-color: $color-secunario;
-    border-color: $color-secunario;
     border-radius: 0.2rem;
     padding: 0rem 1rem;
     font-size: small;
@@ -466,6 +470,12 @@ margin-left: 35%;
     margin-left: 5px;
     max-width: 160px;
 
+  }
+
+  .btn-danger:hover{
+    background-color:white;
+    color: $color-secunario;
+    border-color: $color-secunario;
   }
 
   .nav-link {
@@ -499,12 +509,16 @@ margin-left: 35%;
   .nav-item3 {
     margin: -10px;
   }
-
+  
   .nav-item4{
     justify-content:flex-end;
     margin-left: 35%;
   }
-
+  
+  .nav-link:hover {
+    color: $color-secunario;
+  }
+  
   .container,
   .row {
     width: 100%;

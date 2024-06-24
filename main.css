@@ -11896,7 +11896,8 @@ textarea.form-control-lg {
 .OperaButton:hover,
 .moreInfo:hover,
 .Chrome:hover,
-.infoButton:hover {
+.infoButton:hover,
+.moreInfo:hover {
   background-color: white;
   color: #5265E1;
   outline-color: #5265E1;
@@ -12073,6 +12074,10 @@ textarea.form-control-lg {
   background-image: url(./Imagenes/icon-arrow.svg);
 }
 
+.accordion-button:hover {
+  color: #FA5959;
+}
+
 .button-container {
   text-align: center;
   margin: 20px;
@@ -12228,7 +12233,6 @@ textarea.form-control-lg {
 }
 .footer .btn-danger {
   background-color: #FA5959;
-  border-color: #FA5959;
   border-radius: 0.2rem;
   padding: 0rem 1rem;
   font-size: small;
@@ -12237,6 +12241,11 @@ textarea.form-control-lg {
   display: inline-flex;
   margin-left: 5px;
   max-width: 160px;
+}
+.footer .btn-danger:hover {
+  background-color: white;
+  color: #FA5959;
+  border-color: #FA5959;
 }
 .footer .nav-link {
   color: #ffffff;
@@ -12268,6 +12277,9 @@ textarea.form-control-lg {
 .footer .nav-item4 {
   justify-content: flex-end;
   margin-left: 35%;
+}
+.footer .nav-link:hover {
+  color: #FA5959;
 }
 .footer .container,
 .footer .row {
