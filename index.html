@@ -40,7 +40,7 @@
     
 <div class="container">
   <div class="row">
-    <div class="col colPrincipalPage">
+    <div class="col-sm-4 align-self-center colPrincipalPage">
       <h1>A Simple Bookmark Manager</h1>
       <p class="text">A clean and simple interface to organize your favorite websites. 
         Open a new browser tab an see your sites load instantly. 
@@ -48,7 +48,7 @@
       <button class="btn btn-outline-light me-2 Chrome" type="button">Get it on Chrome</button>
       <button class="btn Firefox" type="button">Get it on Firefox</button>
     </div>
-    <div class="col img-container1">
+    <div class="col-md-8 img-container1">
       <div class="bg-figure1"></div>
       <img src="/Imagenes/illustration-hero.svg" class="img-fluid1">
     </div>
@@ -58,7 +58,7 @@
 <!-- Features -->
 
     <div class="container" id="features">
-      <div class="row text-center">
+      <div class="row g-6 text-center">
         <h2>Features</h2>
           <p class="featuresAlign">Our aim is to make it quick and easy for you to access your favourite websites. 
             Your bookmarks sync between your devices so you can access them on the go.</p>
@@ -68,12 +68,12 @@
               <a class="nav-link" href="#">Easy Sharing</a>
             </div>
           </div>
-          <div class="row">
-            <div class="col img-container2">
+          <div class="row g-6">
+            <div class="col-md-6 img-container2">
               <div class="bg-figure2 figureFeatures"></div>
               <img src="/Imagenes/illustration-features-tab-1.svg" class="img-fluid2">
             </div>
-            <div class="col  featuresAlign2">
+            <div class="col-sm-4 featuresAlign2">
               <h3>Bookmark in one click</h3>
               <p class="featuresAlign">Organize your bookmarks however you like you like. Our simple drag-and-drop
                  interface gives you complete control over how manage your favorites sites.</p>
@@ -94,7 +94,7 @@
   </div>
 </div>  
 <div class="containerCards text-center">
-  <div class="row">
+  <div class="row align-items-center">
     <div class="col" id="card1">
       <div class="card h-100">
         <img src="./Imagenes/logo-chrome.svg" class="chromeImage">
@@ -199,15 +199,84 @@
   <a href="#" class="btn btn-outline-light  infoButton" type="button">More Info</a></div>
 </div>
 
+<!-- Footer -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col text-center">
+        <p>35,000 + ALREADY JOINED</p>
+        <h5>Stay up-to-date with what we're doing</h5>
+        <br>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form class="form-inline d-flex justify-content-center position-relative needs-validation" novalidate>
+          <input type="email" class="form-control" placeholder="Enter your email adress">
+          <div class="valid-tooltip">
+            Input completed
+          </div>
+          <div class="invalid-tooltip">
+            Whoops, make sure it's an email
+          </div>
+          <button type="button" class="btn btn-danger" onclick="contactUs()">Contact Us</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="col-12 mt-4">
+      <ul class="nav footerButtons">
+        <li class="nav-item">
+          <a class="nav-linkLogo" href="#"><img src="./Imagenes/logo-bookmark.svg" alt=""></a>
+        </li>
+          <li class="nav-item1">
+              <a class="nav-link text-white" href="#">FEATURES</a>
+          </li>
+          <li class="nav-item2">
+              <a class="nav-link text-white" href="#">PRICING</a>
+          </li>
+          <li class="nav-item3">
+              <a class="nav-link text-white" href="#">CONTACT</a>
+          </li>
+          <li class="nav-item4">
+            <a class="nav-link" href="#"><img src="./Imagenes/icon-facebook.svg" alt="Facebook"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./Imagenes/icon-twitter.svg" alt="Twitter"></a>
+          </li>
+        </ul>
+  </div>
+</footer>
+
 <!-- lógica JS -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
 
     <script>
-      function scrollToSection(id) {
-        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-      }
-    </script>
+      
+      function contactUs() {
+  const form = document.querySelector('.needs-validation');
+  const emailInput = form.querySelector('input[type="email"]');
+  
+  // Check if email input is empty or invalid format
+  if (emailInput.value.trim() === '' || !isValidEmail(emailInput.value.trim())) {
+    emailInput.classList.add('is-invalid');
+    emailInput.classList.remove('is-valid');
+  } else {
+    emailInput.classList.remove('is-invalid');
+    emailInput.classList.add('is-valid');
+  }
+  
+  // Function to validate email format
+  function isValidEmail(email) {
+    // Regular expression for basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+}
+      </script>
 </body>
 
 </html>
